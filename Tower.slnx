@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/WindowsSmoke/WindowsSmoke.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Tower.Core/Tower.Core.csproj" />
+    <Project Path="src/Tower.Infrastructure/Tower.Infrastructure.csproj" />
+    <Project Path="src/Tower.Speech.Windows/Tower.Speech.Windows.csproj" />
+    <Project Path="src/Tower.Speech/Tower.Speech.csproj" />
+    <Project Path="src/Tower.WinForms/Tower.csproj" />
+    <Project Path="Tests/Tower.Tests.csproj" />
+  </Folder>
+</Solution>

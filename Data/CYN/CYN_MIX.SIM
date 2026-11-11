@@ -1,0 +1,42 @@
+TOWER Simulation File Version 3.8
+
+!!! THIS FILE IS NOT INTENDED FOR USER MODIFICATION !!!
+!!! USER MODIFICATION CAN CAUSE UNPREDICABLE BEHAVIOR !!!
+
+[SimInfo]
+Sector   CYN.SEC
+Aircraft 6
+Vehicles 0
+Minutes  6
+Seed     813936246
+SimType  NORMAL
+
+[Description]
+This practice scenario contains three arriving and three departing aircraft.
+It is intended to give the new user the chance to start on a small scale
+with learning how to handle both types of aircraft.
+
+[Objectives]
+
+[Environment]
+
+[WindLevels]
+
+[StormData]
+
+[Waypoints]
+
+[Aircraft]
+NWA135 B727 VFR -1 a 00:00 250 6300 2000 1200 9
+ VAN CYN Twr @FS
+DAL253 B727 VFR -1 d 00:10 250 1999 6499 1200 14
+ CYN YLK Ctr @TO @LP @GG8
+NWA1140 B727 VFR -1 a 01:30 250 6700 2000 1200 14
+ VAN CYN Twr @FS
+EGF4375 AT42 VFR -1 d 03:20 350 2499 7499 1200 14
+ CYN IBSEN Ctr @TO @LP @GG6
+N28673 LR35 VFR -1 d 03:50 350 4998 9998 1200 14
+ CYN VAN Ctr @TO @LP
+VOTER22 C130 VFR -1 a 04:30 250 6600 2000 1200 9
+ VAN CYN Twr @FS
+

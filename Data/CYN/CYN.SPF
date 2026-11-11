@@ -1,0 +1,46 @@
+Tower V1.0 Site Specific File File Version 3.8
+;
+; Copyright (C) 1995, Bruce Artwick Organization, LTD.  All Rights Reserved.
+;
+[AirportInfo]
+Canyon Field
+CYN
+50
+
+[Taxiways]
+A       alpha                       1
+B       bravo                       2
+C       charlie                     3
+D       delta                       4
+E       echo                        5
+F       foxtrot                     6
+G       golf                        7
+H       hotel                       8
+I       india                       9
+J       juliet                      10
+K       kilo                        11
+L       lima                        12
+M       mike                        13
+N       november                    14
+O       oscar                       15
+P       papa                        16
+Q       quebec                      17
+R       romeo                       18
+S       sierra                      19
+T       tango                       20
+U       uniform                     21
+V       victor                      22
+W       whiskey                     23
+X       xray                        24
+Y       yankee                      25
+Z       zulu                        26
+
+[RUNWAYS]
+RUNWAY_9            1
+RUNWAY_09           1
+RUNWAY_27           2
+RUNWAY_14           3
+RUNWAY_32           4
+
+[End]
+

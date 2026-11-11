@@ -1,0 +1,128 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ApplicationIcon>../../Resources/MAINICON.ico</ApplicationIcon>
+    <BaseOutputPath>../../Bin/</BaseOutputPath>
+    <TowerDataRoot Condition="'$(TowerDataRoot)' == ''">$(MSBuildThisFileDirectory)../../Data</TowerDataRoot>
+    <TowerRequireGameData Condition="'$(TowerRequireGameData)' == ''">true</TowerRequireGameData>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(TowerDataRoot)/*.VOC;$(TowerDataRoot)/SPEECH.BIN;$(TowerDataRoot)/CYN/**/*;$(TowerDataRoot)/AIRPORTS/CYN.CFG;$(TowerDataRoot)/GRAPHICS/MODELS/**/*" Exclude="$(TowerDataRoot)/**/Backups/**/*;$(TowerDataRoot)/**/*.bak;$(TowerDataRoot)/**/*.tmp;$(TowerDataRoot)/**/*.DLL">
+      <Link>Data/$([MSBuild]::MakeRelative('$(TowerDataRoot)', '%(FullPath)'))</Link>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="../../settings.ini" />
+  </ItemGroup>
+  <Target Name="ValidateTowerReleaseData" BeforeTargets="ComputeFilesToPublish" Condition="'$(TowerRequireGameData)' == 'true'">
+    <ItemGroup>
+      <RequiredGameData Include="$(TowerDataRoot)/SPEECH.BIN;$(TowerDataRoot)/VOICE.VOC;$(TowerDataRoot)/CALLSIGN.VOC;$(TowerDataRoot)/CYN/CYN.TWR;$(TowerDataRoot)/AIRPORTS/CYN.CFG;$(TowerDataRoot)/GRAPHICS/MODELS/MODELS.INI" />
+    </ItemGroup>
+    <Error Condition="!Exists('%(RequiredGameData.Identity)')" Text="Required game data is missing: %(RequiredGameData.Identity). Restore repository-root Data before publishing a complete Tower release. TowerRequireGameData=false produces application files only." />
+  </Target>
+  <ItemGroup>
+    <PackageReference Include="SibraSoft.Shared" Version="1.0.1" />
+    <PackageReference Include="System.Speech" Version="10.0.14" />
+    <ProjectReference Include="../Tower.Infrastructure/Tower.Infrastructure.csproj" />
+    <ProjectReference Include="../Tower.Speech.Windows/Tower.Speech.Windows.csproj" />
+    <EmbeddedResource Include="../../Resources/*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="..\..\Resources\ASDEICON.ico" />
+    <EmbeddedResource Remove="..\..\Resources\ASDEICON.jpg" />
+    <EmbeddedResource Remove="..\..\Resources\BIGTWR.bmp" />
+    <EmbeddedResource Remove="..\..\Resources\BRITEICON.ico" />
+    <EmbeddedResource Remove="..\..\Resources\MAINICON.bmp" />
+    <EmbeddedResource Remove="..\..\Resources\PERKSICON.bmp" />
+    <EmbeddedResource Remove="..\..\Resources\PERKSICON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Cursors\ASDECURSOR.cur" />
+    <None Remove="Resources\Cursors\BRITECURSOR.cur" />
+    <None Remove="Resources\Cursors\CHARCURSOR.cur" />
+    <None Remove="Resources\Cursors\LIGHTSCURSOR.cur" />
+    <None Remove="Resources\Cursors\STARTCURSOR.cur" />
+    <None Remove="Resources\Cursors\STRIPSCURSOR.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursors\ASDECURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\BRITECURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\CHARCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\LIGHTSCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\STARTCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\STRIPSCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="..\..\Resources\ASDECURSOR.cur" Link="Resources\ASDECURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="..\..\Resources\ASDEDN.bmp" Link="Resources\ASDEDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\ASDEUP.bmp" Link="Resources\ASDEUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\BRITECURSOR.cur" Link="Resources\BRITECURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="..\..\Resources\BRITEDN.bmp" Link="Resources\BRITEDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\BRITEUP.bmp" Link="Resources\BRITEUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\CHARCURSOR.cur" Link="Resources\CHARCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="..\..\Resources\COFFEEDN.bmp" Link="Resources\COFFEEDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\COFFEEUP.bmp" Link="Resources\COFFEEUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\COMPASSDN.bmp" Link="Resources\COMPASSDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\COMPASSUP.bmp" Link="Resources\COMPASSUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\EXITDN.bmp" Link="Resources\EXITDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\EXITUP.bmp" Link="Resources\EXITUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\LIGHTSCURSOR.cur" Link="Resources\LIGHTSCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="..\..\Resources\LIGHTSDN.bmp" Link="Resources\LIGHTSDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\LIGHTSUP.bmp" Link="Resources\LIGHTSUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\MAINICON.ico" Link="Resources\MAINICON.ico" />
+    <EmbeddedResource Update="..\..\Resources\PERKSDN.bmp" Link="Resources\PERKSDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\PERKSUP.bmp" Link="Resources\PERKSUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\PHONEDN.bmp" Link="Resources\PHONEDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\PHONEUP.bmp" Link="Resources\PHONEUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\RADIODN.bmp" Link="Resources\RADIODN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\RADIOUP.bmp" Link="Resources\RADIOUP.bmp" />
+    <EmbeddedResource Update="..\..\Resources\STARTCURSOR.cur" Link="Resources\STARTCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="..\..\Resources\STRIPSCURSOR.cur" Link="Resources\STRIPSCURSOR.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="..\..\Resources\STRIPSDN.bmp" Link="Resources\STRIPSDN.bmp" />
+    <EmbeddedResource Update="..\..\Resources\STRIPSUP.bmp" Link="Resources\STRIPSUP.bmp" />
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

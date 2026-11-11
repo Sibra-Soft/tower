@@ -1,0 +1,81 @@
+name: Tower verification
+on:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  build-test:
+    name: Build and simulation tests
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Build all projects
+        run: dotnet build Tower.slnx -c Release
+      - name: Prepare Canyon test data
+        shell: pwsh
+        run: |
+          ./.github/scripts/Prepare-TestData.ps1 -Destination obj/Verification-CI
+          "TOWER_ORIGINAL_DATA=$((Resolve-Path obj/Verification-CI/Data).Path)" >> $env:GITHUB_ENV
+      - name: Run CI simulation and contract tests
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force obj/TestResults | Out-Null
+          dotnet Tests/bin/Release/net10.0/Tower.Tests.dll -noLogo -trait- Category=Integration -result-xml obj/TestResults/ci.xml
+          if ($LASTEXITCODE -ne 0) { throw 'CI simulation tests failed.' }
+  windows-smoke:
+    name: Windows control checks
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Build Windows checks
+        run: dotnet build Tests/WindowsSmoke/WindowsSmoke.csproj -c Release
+      - name: Check controls with isolated Canyon data
+        shell: pwsh
+        run: |
+          ./.github/scripts/Prepare-TestData.ps1 -Destination obj/Verification-CI
+          $env:TOWER_ORIGINAL_DATA = (Resolve-Path obj/Verification-CI/Data).Path
+          $env:TOWER_SMOKE_OUTPUT = Join-Path $PWD obj/WindowsSmoke
+          dotnet Tests/WindowsSmoke/bin/Release/net10.0-windows/WindowsSmoke.dll --ci-only
+          if ($LASTEXITCODE -ne 0) { throw 'Windows control checks failed.' }
+  integration:
+    name: Complete Canyon, package and Windows integration
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Prepare isolated Canyon fixtures
+        shell: pwsh
+        run: |
+          ./.github/scripts/Prepare-TestData.ps1 -Destination obj/Verification-Full
+          "TOWER_ORIGINAL_DATA=$((Resolve-Path obj/Verification-Full/Data).Path)" >> $env:GITHUB_ENV
+      - name: Build all projects
+        run: dotnet build Tower.slnx -c Release
+      - name: Run Canyon and package integration tests
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force obj/TestResults | Out-Null
+          dotnet Tests/bin/Release/net10.0/Tower.Tests.dll -noLogo -trait Category=Integration -longRunning 120 -result-xml obj/TestResults/integration.xml
+          if ($LASTEXITCODE -ne 0) { throw 'Full simulation and integration tests failed.' }
+      - name: Check Canyon in a standalone Windows environment
+        shell: pwsh
+        run: |
+          $standalone = Join-Path $env:RUNNER_TEMP Tower-Integration
+          Copy-Item Tests/WindowsSmoke/bin/Release/net10.0-windows $standalone -Recurse
+          Copy-Item $env:TOWER_ORIGINAL_DATA (Join-Path $standalone Data) -Recurse
+          Copy-Item Tests/Fixtures/settings.ini (Join-Path $standalone settings.ini)
+          $env:TOWER_SMOKE_OUTPUT = Join-Path $PWD obj/WindowsSmoke
+          dotnet (Join-Path $standalone WindowsSmoke.dll)
+          if ($LASTEXITCODE -ne 0) { throw 'Full Windows and speech checks failed.' }
+          dotnet (Join-Path $standalone WindowsSmoke.dll) --airport-manager-only
+          if ($LASTEXITCODE -ne 0) { throw 'Airport manager checks failed.' }

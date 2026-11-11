@@ -1,0 +1,17 @@
+[TowerLayout]
+Version=1
+Coordinates=Screen
+
+[Windows]
+Operational=Maximized,138,60,455,541
+ASDE=On,1600,4,434,377
+BRITE=On,2023,3,402,379
+ArrivalStrips=On,1904,379,328,268
+DepartureStrips=On,1600,380,313,266
+Buttons=Off,268,147,48,327
+Comm=On,1600,642,888,208
+3D=0,24,1600,783
+FlightStrips=On
+Compass=On
+Gauges=On
+AircraftLabels=Off

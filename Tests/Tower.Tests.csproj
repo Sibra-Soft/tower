@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+    <PackageReference Include="xunit.v3" Version="4.0.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.1" PrivateAssets="all" />
+  </ItemGroup>
+  <!-- Legacy UI smoke helper targets the retired form API; this project tests Core/Infrastructure. -->
+  <ItemGroup><Compile Remove="SmokeTest.cs" /></ItemGroup>
+  <ItemGroup><Compile Remove="WindowsSmoke/**/*.cs" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../src/Tower.Infrastructure/Tower.Infrastructure.csproj" /></ItemGroup>
+  <ItemGroup><None Update="Fixtures/**/*" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+</Project>

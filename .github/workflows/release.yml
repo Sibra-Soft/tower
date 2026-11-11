@@ -1,0 +1,108 @@
+name: Tower release
+on:
+  push:
+    tags: ['v[0-9]*', '[0-9]*']
+  release:
+    types: [published]
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  version:
+    runs-on: windows-latest
+    outputs:
+      number: ${{ steps.version.outputs.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate version tag
+        id: version
+        shell: pwsh
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name || github.ref_name }}
+        run: |
+          $version = ./.github/scripts/Get-ReleaseVersion.ps1 -Tag $env:RELEASE_TAG
+          "number=$version" >> $env:GITHUB_OUTPUT
+  verify:
+    needs: version
+    uses: ./.github/workflows/verify.yml
+  package:
+    name: Build verified Windows installer and portable release
+    needs: [version, verify]
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Publish Canyon Windows application
+        shell: pwsh
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.number }}
+        run: |
+          ./Setup/Build.ps1 -Version $env:RELEASE_VERSION -PublishOnly
+      - name: Check the actual published Canyon data
+        shell: pwsh
+        run: |
+          dotnet build Tests/WindowsSmoke/WindowsSmoke.csproj -c Release
+          if ($LASTEXITCODE -ne 0) { throw 'Smoke helper build failed.' }
+          $standalone = Join-Path $env:RUNNER_TEMP Tower-Release-Check
+          Copy-Item Tests/WindowsSmoke/bin/Release/net10.0-windows $standalone -Recurse
+          Copy-Item Setup/publish/Data (Join-Path $standalone Data) -Recurse
+          Copy-Item Tests/Fixtures/settings.ini (Join-Path $standalone settings.ini)
+          $env:TOWER_ORIGINAL_DATA = Join-Path $standalone Data
+          $env:TOWER_SMOKE_OUTPUT = Join-Path $PWD obj/ReleaseSmoke
+          dotnet (Join-Path $standalone WindowsSmoke.dll)
+          if ($LASTEXITCODE -ne 0) { throw 'Published Canyon assets failed standalone verification.' }
+      - name: Install NSIS compiler
+        shell: pwsh
+        run: |
+          choco install nsis.install --version=3.12.0 --yes --no-progress
+          if ($LASTEXITCODE -ne 0) { throw 'NSIS installation failed.' }
+      - name: Compile installer and portable archive
+        shell: pwsh
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.number }}
+        run: ./Setup/Build.ps1 -Version $env:RELEASE_VERSION -SkipPublish
+      - name: Verify install, upgrade and uninstall
+        shell: pwsh
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.number }}
+        run: ./Setup/Test-Installer.ps1 -Version $env:RELEASE_VERSION
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Tower-${{ github.ref_name }}-release-files
+          path: Setup/output/*
+          if-no-files-found: error
+          retention-days: 1
+  release:
+    name: Attach verified files to GitHub release
+    needs: package
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: Tower-${{ github.ref_name }}-release-files
+          path: release-files
+      - name: Create or update version release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          gh release view $env:RELEASE_TAG *> $null
+          if ($LASTEXITCODE -ne 0) {
+            $arguments = @('release', 'create', $env:RELEASE_TAG, '--verify-tag', '--title', "Tower $env:RELEASE_TAG", '--generate-notes')
+            if ($env:RELEASE_TAG.Contains('-')) { $arguments += '--prerelease' }
+            gh @arguments
+            if ($LASTEXITCODE -ne 0) { throw 'GitHub release creation failed.' }
+          }
+          $files = @(Get-ChildItem release-files -File | Select-Object -ExpandProperty FullName)
+          if ($files.Count -ne 3) { throw 'Expected installer, portable archive and checksums.' }
+          gh release upload $env:RELEASE_TAG @files --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'GitHub release upload failed.' }

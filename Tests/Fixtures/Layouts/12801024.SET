@@ -1,0 +1,16 @@
+[Windows]
+Operational=Normal,0,0,976,61
+ASDE=On,976,-62,304,365
+BRITE=On,976,303,304,365
+FlightStrips=On
+ArrivalStrips=976,668,304,148
+DepartureStrips=976,816,304,147
+3D=0,0,976,823
+Buttons=Off,0,-17
+Comm=0,823,755,140
+Compass=On,755,823
+Gauges=On
+Time=850,904,126,59
+Wind=815,823,161,81
+Altim=755,904,95,59
+

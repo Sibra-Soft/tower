@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Tower.Speech/Tower.Speech.csproj" />
+    <PackageReference Include="System.Speech" Version="10.0.14" />
+  </ItemGroup>
+</Project>

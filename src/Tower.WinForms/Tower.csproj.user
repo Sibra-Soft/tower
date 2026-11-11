@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Controls\CommandTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\FlightStripControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\HotspotPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\RadarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\TowerView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ASDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ASDESetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_BRITE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_BRITESetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ButtonBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_Commands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ControllerNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ControllerSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ManageAirports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_Performance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_DisplaySetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_FlightStrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_LightsSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_PerformanceReward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_RestoreSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_SaveSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_SimulationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ScenarioNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_ScenarioSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_SoundSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

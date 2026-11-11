@@ -1,0 +1,913 @@
+Tower V1.0 Performance File Version 3.8
+
+[Single]
+
+Type: C182                               Target_Echo_Area: 1
+Top_Speed: 134                           Weight_Category: 1
+Approach_Speed: 70                       Landing_Speed: 70
+Cruise_Speed: 120                        Takeoff_Speed: 70
+Stall_Speed: 45                          Pattern_Speed: 100
+Climb_Speed: 80                          Takeoff_Pitch: 3
+Descent_Speed: 75                        Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 12500                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 3                Wing_Span: 36
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 28
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 700                      Service_Ceiling_to_25001: 700
+     501_to_5000: 700                         25000_to_10001: 700
+     5001_to_10000: 700                       10000_to_5001: 700
+     10001_to_25000: 700                      5000_to_501: 700
+     25001_to_Service_Ceiling: 700            500_to_Surface: 700
+Takeoff_Distance: 3000                   Landing_Distance: 3000
+Emergency_Descent_Rate: 1200             Stopping_Distance: 3000
+Holding_Speed: 70                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: BE23                               Target_Echo_Area: 1
+Top_Speed: 130                           Weight_Category: 1
+Approach_Speed: 80                       Landing_Speed: 70
+Cruise_Speed: 110                        Takeoff_Speed: 90
+Stall_Speed: 60                          Pattern_Speed: 130
+Climb_Speed: 85                          Takeoff_Pitch: 3
+Descent_Speed: 85                        Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 12500                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 7                Wing_Span: 33
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 26
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 500                      Service_Ceiling_to_25001: 500
+     501_to_5000: 500                         25000_to_10001: 500
+     5001_to_10000: 500                       10000_to_5001: 500
+     10001_to_25000: 500                      5000_to_501: 500
+     25001_to_Service_Ceiling: 500            500_to_Surface: 500
+Takeoff_Distance: 2500                   Landing_Distance: 2000
+Emergency_Descent_Rate: 1200             Stopping_Distance: 2000
+Holding_Speed: 70                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: C172                               Target_Echo_Area: 1
+Top_Speed: 134                           Weight_Category: 1
+Approach_Speed: 70                       Landing_Speed: 70
+Cruise_Speed: 120                        Takeoff_Speed: 70
+Stall_Speed: 45                          Pattern_Speed: 100
+Climb_Speed: 80                          Takeoff_Pitch: 3
+Descent_Speed: 75                        Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 12500                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 3                Wing_Span: 36
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 20
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 700                      Service_Ceiling_to_25001: 700
+     501_to_5000: 700                         25000_to_10001: 700
+     5001_to_10000: 700                       10000_to_5001: 700
+     10001_to_25000: 700                      5000_to_501: 700
+     25001_to_Service_Ceiling: 700            500_to_Surface: 700
+Takeoff_Distance: 3000                   Landing_Distance: 3000
+Emergency_Descent_Rate: 1200             Stopping_Distance: 3000
+Holding_Speed: 70                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: C208                               Target_Echo_Area: 2
+Top_Speed: 230                           Weight_Category: 2
+Approach_Speed: 95                       Landing_Speed: 70
+Cruise_Speed: 210                        Takeoff_Speed: 70
+Stall_Speed: 60                          Pattern_Speed: 130
+Climb_Speed: 100                         Takeoff_Pitch: 3
+Descent_Speed: 100                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 25000                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 3                Wing_Span: 52
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 38
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 1900                      Service_Ceiling_to_25001: 1900
+     501_to_5000: 1900                         25000_to_10001: 1900
+     5001_to_10000: 1900                       10000_to_5001: 1900
+     10001_to_25000: 1900                      5000_to_501: 1900
+     25001_to_Service_Ceiling: 1900            500_to_Surface: 1900
+Takeoff_Distance: 3000                   Landing_Distance: 3000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 3000
+Holding_Speed: 180                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: PA28                               Target_Echo_Area: 1
+Top_Speed: 133                           Weight_Category: 1
+Approach_Speed: 70                       Landing_Speed: 70
+Cruise_Speed: 120                        Takeoff_Speed: 70
+Stall_Speed: 60                          Pattern_Speed: 120
+Climb_Speed: 80                          Takeoff_Pitch: 3
+Descent_Speed: 75                        Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 12500                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 3                Wing_Span: 52
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 38
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 700                       Service_Ceiling_to_25001: 700
+     501_to_5000: 700                          25000_to_10001: 700
+     5001_to_10000: 700                        10000_to_5001: 700
+     10001_to_25000: 700                       5000_to_501: 700
+     25001_to_Service_Ceiling: 700             500_to_Surface: 700
+Takeoff_Distance: 3000                   Landing_Distance: 3000
+Emergency_Descent_Rate: 1200             Stopping_Distance: 3000
+Holding_Speed: 80                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: PA32                               Target_Echo_Area: 1
+Top_Speed: 200                           Weight_Category: 1
+Approach_Speed: 90                       Landing_Speed: 70
+Cruise_Speed: 180                        Takeoff_Speed: 90
+Stall_Speed: 60                          Pattern_Speed: 130
+Climb_Speed: 100                         Takeoff_Pitch: 3
+Descent_Speed: 100                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 20000                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 2                Wing_Span: 32
+Taxi_Deceleration_Rate: 4                Fuselage_Length: 25
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 1900                      Service_Ceiling_to_25001: 1900
+     501_to_5000: 1900                         25000_to_10001: 1900
+     5001_to_10000: 1900                       10000_to_5001: 1900
+     10001_to_25000: 1900                      5000_to_501: 1900
+     25001_to_Service_Ceiling: 1900            500_to_Surface: 1900
+Takeoff_Distance: 3000                   Landing_Distance: 3000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 3000
+Holding_Speed: 100                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: C150                               Target_Echo_Area: 1
+Top_Speed: 126                           Weight_Category: 1
+Approach_Speed: 60                       Landing_Speed: 70
+Cruise_Speed: 117                        Takeoff_Speed: 70
+Stall_Speed: 40                          Pattern_Speed: 130
+Climb_Speed: 65                          Takeoff_Pitch: 3
+Descent_Speed: 65                        Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 10000                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 7                Wing_Span: 33
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 24
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 500                      Service_Ceiling_to_25001: 500
+     501_to_5000: 500                         25000_to_10001: 500
+     5001_to_10000: 500                       10000_to_5001: 500
+     10001_to_25000: 500                      5000_to_501: 500
+     25001_to_Service_Ceiling: 500            500_to_Surface: 500
+Takeoff_Distance: 2500                   Landing_Distance: 2000
+Emergency_Descent_Rate: 1200             Stopping_Distance: 2000
+Holding_Speed: 70                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[Twin]
+
+Type: BE58                               Target_Echo_Area: 2
+Top_Speed: 210                           Weight_Category: 2
+Approach_Speed: 110                      Landing_Speed: 70
+Cruise_Speed: 190                        Takeoff_Speed: 100
+Stall_Speed: 85                          Pattern_Speed: 130
+Climb_Speed: 115                         Takeoff_Pitch: 3
+Descent_Speed: 115                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 25000                   Delta_Altitude: 1024
+Taxi_Acceleration_Rate: 3                Wing_Span: 38
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 30
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 1700                     Service_Ceiling_to_25001: 1700
+     501_to_5000: 1700                        25000_to_10001: 1700
+     5001_to_10000: 1700                      10000_to_5001: 1700
+     10001_to_25000: 1700                     5000_to_501: 1700
+     25001_to_Service_Ceiling: 1700           500_to_Surface: 1700
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 160                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: C310                               Target_Echo_Area: 2
+Top_Speed: 200                           Weight_Category: 2
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 210                        Takeoff_Speed: 100
+Stall_Speed: 110                         Pattern_Speed: 180
+Climb_Speed: 200                         Takeoff_Pitch: 14
+Descent_Speed: 120                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 25000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 3                Wing_Span: 36
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 32
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 3000             Stopping_Distance: 4000
+Holding_Speed: 180                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: C411                               Target_Echo_Area: 2
+Top_Speed: 200                           Weight_Category: 2
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 210                        Takeoff_Speed: 120
+Stall_Speed: 110                         Pattern_Speed: 180
+Climb_Speed: 200                         Takeoff_Pitch: 14
+Descent_Speed: 120                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 25000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 3                Wing_Span: 42
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 36
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 3000             Stopping_Distance: 4000
+Holding_Speed: 180                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[TurboProp]
+
+Type: BATP                               Target_Echo_Area: 1
+Top_Speed: 370                           Weight_Category: 1
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 100
+Stall_Speed: 110                         Pattern_Speed: 160
+Climb_Speed: 250                         Takeoff_Pitch: 14
+Descent_Speed: 140                       Approach_Pitch: -1
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 29
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 32
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 15
+
+Type: AT42                               Target_Echo_Area: 1
+Top_Speed: 370                           Weight_Category: 1
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 120
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 12
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 81
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 75
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: AT72                               Target_Echo_Area: 1
+Top_Speed: 370                           Weight_Category: 1
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 120
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 9
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 81
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 75
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: BE20                               Target_Echo_Area: 2
+Top_Speed: 290                           Weight_Category: 2
+Approach_Speed: 113                      Landing_Speed: 70
+Cruise_Speed: 270                        Takeoff_Speed: 90
+Stall_Speed: 75                          Pattern_Speed: 130
+Climb_Speed: 125                         Takeoff_Pitch: 3
+Descent_Speed: 125                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 30000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 55
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 44
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 4000
+Holding_Speed: 200                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: BE90                               Target_Echo_Area: 2
+Top_Speed: 285                           Weight_Category: 2
+Approach_Speed: 113                      Landing_Speed: 70
+Cruise_Speed: 240                        Takeoff_Speed: 90
+Stall_Speed: 88                          Pattern_Speed: 130
+Climb_Speed: 125                         Takeoff_Pitch: 3
+Descent_Speed: 125                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 30000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 46
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 40
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 4000             Stopping_Distance: 4000
+Holding_Speed: 210                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: DH6                                Target_Echo_Area: 2
+Top_Speed: 210                           Weight_Category: 2
+Approach_Speed: 90                       Landing_Speed: 70
+Cruise_Speed: 192                        Takeoff_Speed: 150
+Stall_Speed: 74                          Pattern_Speed: 130
+Climb_Speed: 160                          Takeoff_Pitch: 3
+Descent_Speed: 95                        Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 14
+Service_Ceiling: 26700                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 65
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 52
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2100                     Service_Ceiling_to_25001: 2100
+     501_to_5000: 2100                        25000_to_10001: 2100
+     5001_to_10000: 2100                      10000_to_5001: 2100
+     10001_to_25000: 2100                     5000_to_501: 2100
+     25001_to_Service_Ceiling: 2100           500_to_Surface: 2100
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 3000             Stopping_Distance: 4000
+Holding_Speed: 160                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: DH8                                Target_Echo_Area: 2
+Top_Speed: 460                           Weight_Category: 2
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 190
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 14
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 85
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 73
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: L100                               Target_Echo_Area: 3
+Top_Speed: 460                           Weight_Category: 3
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 190
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 54
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 60
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: MU2                                Target_Echo_Area: 2
+Top_Speed: 200                           Weight_Category: 2
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 210                        Takeoff_Speed: 120
+Stall_Speed: 110                         Pattern_Speed: 180
+Climb_Speed: 200                         Takeoff_Pitch: 14
+Descent_Speed: 120                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 25000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 3                Wing_Span: 39
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 39
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 3000             Stopping_Distance: 4000
+Holding_Speed: 180                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: SH36                               Target_Echo_Area: 1
+Top_Speed: 370                           Weight_Category: 1
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 90
+Stall_Speed: 110                         Pattern_Speed: 160
+Climb_Speed: 250                         Takeoff_Pitch: 14
+Descent_Speed: 140                       Approach_Pitch: -1
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 75
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 71
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 3000                        25000_to_10001: 2000
+     5001_to_10000: 3000                      10000_to_5001: 2000
+     10001_to_25000: 3000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 15
+
+Type: FK27                               Target_Echo_Area: 1
+Top_Speed: 370                           Weight_Category: 1
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 120
+Stall_Speed: 110                         Pattern_Speed: 160
+Climb_Speed: 250                         Takeoff_Pitch: 14
+Descent_Speed: 140                       Approach_Pitch: -1
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 95
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 82
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 3000                        25000_to_10001: 2000
+     5001_to_10000: 3000                      10000_to_5001: 2000
+     10001_to_25000: 3000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 15
+
+Type: BE02                               Target_Echo_Area: 1
+Top_Speed: 370                           Weight_Category: 1
+Approach_Speed: 110                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 110
+Stall_Speed: 110                         Pattern_Speed: 160
+Climb_Speed: 250                         Takeoff_Pitch: 14
+Descent_Speed: 140                       Approach_Pitch: -1
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 54
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 58
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 3000                        25000_to_10001: 2000
+     5001_to_10000: 3000                      10000_to_5001: 2000
+     10001_to_25000: 3000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 15
+
+Type: BA46                               Target_Echo_Area: 2
+Top_Speed: 460                           Weight_Category: 2
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 190
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 12
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 87
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 86
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[CorpJet]
+
+Type: C500                               Target_Echo_Area: 2
+Top_Speed: 370                           Weight_Category: 2
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 100
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 47
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 47
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: C550                               Target_Echo_Area: 2
+Top_Speed: 370                           Weight_Category: 2
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 100
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 47
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 47
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: CL60                               Target_Echo_Area: 2
+Top_Speed: 370                           Weight_Category: 2
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 150
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 12
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 62
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 68
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: LR35                               Target_Echo_Area: 2
+Top_Speed: 370                           Weight_Category: 2
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 100
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 40
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 49
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[Airline]
+
+Type: B727                               Target_Echo_Area: 3
+Top_Speed: 460                           Weight_Category: 3
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 180
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 108
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 153
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 15
+
+Type: B737                               Target_Echo_Area: 3
+Top_Speed: 460                           Weight_Category: 3
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 190
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 93
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 100
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: DC9                                Target_Echo_Area: 3
+Top_Speed: 510                           Weight_Category: 3
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 110
+Stall_Speed: 100                         Pattern_Speed: 140
+Climb_Speed: 150                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 94
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 126
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2600                      Service_Ceiling_to_25001: 3000
+     501_to_5000: 2600                         25000_to_10001: 3000
+     5001_to_10000: 2600                       10000_to_5001: 3000
+     10001_to_25000: 2600                      5000_to_501: 3000
+     25001_to_Service_Ceiling: 2600            500_to_Surface: 3000
+Takeoff_Distance: 5500                    Landing_Distance: 5000
+Emergency_Descent_Rate: 6500              Stopping_Distance: 5000
+Holding_Speed: 220                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: EA32                               Target_Echo_Area: 3
+Top_Speed: 510                           Weight_Category: 3
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 490                        Takeoff_Speed: 120
+Stall_Speed: 100                         Pattern_Speed: 130
+Climb_Speed: 250                         Takeoff_Pitch: 10
+Descent_Speed: 250                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 100
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 125
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                        Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                           25000_to_10001: 3000
+     5001_to_10000: 3000                         10000_to_5001: 3000
+     10001_to_25000: 3000                        5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000              500_to_Surface: 3000
+Takeoff_Distance: 5500                    Landing_Distance: 5000
+Emergency_Descent_Rate: 6500              Stopping_Distance: 5000
+Holding_Speed: 220                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: FK10                               Target_Echo_Area: 2
+Top_Speed: 370                           Weight_Category: 2
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 150
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 160                         Takeoff_Pitch: 10
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 12
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 92
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 116
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: B707                               Target_Echo_Area: 3
+Top_Speed: 460                           Weight_Category: 3
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 190
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 146
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 153
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                     Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                        25000_to_10001: 3000
+     5001_to_10000: 3000                      10000_to_5001: 3000
+     10001_to_25000: 3000                     5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000           500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 3500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: MD8                                Target_Echo_Area: 3
+Top_Speed: 500                           Weight_Category: 3
+Approach_Speed: 136                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 136
+Stall_Speed: 106                         Pattern_Speed: 180
+Climb_Speed: 250                         Takeoff_Pitch: 20
+Descent_Speed: 250                       Approach_Pitch: 5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 5
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 8
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 2                Wing_Span: 108
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 148
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                      Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                         25000_to_10001: 3000
+     5001_to_10000: 3000                       10000_to_5001: 3000
+     10001_to_25000: 3000                      5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000            500_to_Surface: 3000
+Takeoff_Distance: 5500                   Landing_Distance: 5000
+Emergency_Descent_Rate: 6500             Stopping_Distance: 5000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[Heavy]
+
+[Trainer]
+
+[Transport]
+
+Type: C130                               Target_Echo_Area: 3
+Top_Speed: 394                           Weight_Category: 3
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 250                        Takeoff_Speed: 120
+Stall_Speed: 110                         Pattern_Speed: 200
+Climb_Speed: 250                         Takeoff_Pitch: 10
+Descent_Speed: 250                       Approach_Pitch: 1
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 4
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 7
+Service_Ceiling: 33000                   Delta_Altitude: 1500
+Taxi_Acceleration_Rate: 2                Wing_Span: 133
+Taxi_Deceleration_Rate: 5                Fuselage_Length: 98
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 1900                      Service_Ceiling_to_25001: 3000
+     501_to_5000: 1900                         25000_to_10001: 3000
+     5001_to_10000: 1900                       10000_to_5001: 3000
+     10001_to_25000: 1900                      5000_to_501: 3000
+     25001_to_Service_Ceiling: 1900            500_to_Surface: 3000
+Takeoff_Distance: 5500                    Landing_Distance: 5000
+Emergency_Descent_Rate: 6500              Stopping_Distance: 5000
+Holding_Speed: 220                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+Type: CP14                               Target_Echo_Area: 2
+Top_Speed: 370                           Weight_Category: 2
+Approach_Speed: 140                      Landing_Speed: 70
+Cruise_Speed: 350                        Takeoff_Speed: 150
+Stall_Speed: 95                          Pattern_Speed: 130
+Climb_Speed: 140                         Takeoff_Pitch: 3
+Descent_Speed: 140                       Approach_Pitch: -5
+Mach_Transition_Altitude: -1             Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 9
+Service_Ceiling: 35000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 37
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 43
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 2000                     Service_Ceiling_to_25001: 2000
+     501_to_5000: 2000                        25000_to_10001: 2000
+     5001_to_10000: 2000                      10000_to_5001: 2000
+     10001_to_25000: 2000                     5000_to_501: 2000
+     25001_to_Service_Ceiling: 2000           500_to_Surface: 2000
+Takeoff_Distance: 4500                   Landing_Distance: 4000
+Emergency_Descent_Rate: 2500             Stopping_Distance: 4000
+Holding_Speed: 220                       Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[Bomber]
+
+[Fighter]
+
+Type: F18                                Target_Echo_Area: 3
+Top_Speed: 490                           Weight_Category: 3
+Approach_Speed: 130                      Landing_Speed: 70
+Cruise_Speed: 470                        Takeoff_Speed: 150
+Stall_Speed: 111                         Pattern_Speed: 130
+Climb_Speed: 250                         Takeoff_Pitch: 3
+Descent_Speed: 250                       Approach_Pitch: -5
+Mach_Transition_Altitude: 35000          Touchdown_Pitch: 3
+Turn_Rate: 3                             Airborne_Deceleration_Rate: 7
+Turn_Rate_on_Final: 3                    Airborne_Acceleration_Rate: 45
+Service_Ceiling: 45000                   Delta_Altitude: 2048
+Taxi_Acceleration_Rate: 7                Wing_Span: 38
+Taxi_Deceleration_Rate: 7                Fuselage_Length: 56
+Climb_Rate:                              Descent_Rate:
+     Surface_to_500: 3000                        Service_Ceiling_to_25001: 3000
+     501_to_5000: 3000                           25000_to_10001: 3000
+     5001_to_10000: 3000                         10000_to_5001: 3000
+     10001_to_25000: 3000                        5000_to_501: 3000
+     25001_to_Service_Ceiling: 3000              500_to_Surface: 3000
+Takeoff_Distance: 5500                    Landing_Distance: 5000
+Emergency_Descent_Rate: 6500              Stopping_Distance: 5000
+Holding_Speed: 220                        Min_Taxi_Speed: 5
+Max_Taxi_Speed: 16
+
+[Helicopter]
+
+[Vehicle]

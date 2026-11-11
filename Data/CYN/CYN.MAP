@@ -1,0 +1,105 @@
+Tower V1.0 Map File Version 3.8
+
+[Maps]
+
+LINE  Green  1
+dash 1.00 1.00
+5302.28N/09011.81W
+5302.79N/09918.75W
+5009.50N/09903.66W
+5039.49N/09229.75W
+5302.03N/09159.55W
+end
+
+LINE  Green  1
+dash_double 1.00 1.00 2.00
+4908.56N/09859.98W
+5354.92N/09924.00W
+end
+
+LINE  Green  1
+dash_double 1.00 2.00 2.00
+4918.66N/10119.95W
+4907.81N/09858.43W
+4907.59N/08949.95W
+end
+
+LINE  Green  1
+dash 1.00 1.00
+5039.49N/09229.74W
+5037.20N/09135.01W
+4907.86N/09156.81W
+end
+
+LINE  Green  1
+solid
+5338.58N/09933.17W
+5327.32N/09850.67W
+end
+
+LINE  Green  1
+solid
+5325.53N/10109.38W
+5337.97N/10033.95W
+end
+
+LINE  Green  1
+solid
+5027.72N/09502.05W
+4948.49N/09433.46W
+end
+
+LINE  Green  1
+solid
+5037.66N/09250.79W
+5007.65N/09249.36W
+end
+
+LINE  Green  1
+solid
+5027.72N/09502.05W
+5037.66N/09250.78W
+end
+
+LINE  Green  1
+solid
+5327.32N/09850.67W
+5257.05N/09921.35W
+5206.57N/09916.22W
+5208.41N/10026.14W
+5253.98N/10032.17W
+5325.52N/10109.42W
+5325.51N/10109.41W
+end
+
+ARC  Green  1
+center  5114.62N/09559.76W
+radius       30.1
+start_angle  075
+end_angle    360
+degrees_on   1
+degrees_off  1
+
+ARC  Green  1
+center  5114.86N/09559.76W
+radius       30.1
+start_angle  000
+end_angle    360
+degrees_on   360
+degrees_off  0
+
+ARC  Green  1
+center  5206.31N/09949.94W
+radius       93.7
+start_angle  348
+end_angle    011
+degrees_on   360
+degrees_off  0
+
+ARC  Green  1
+center  5001.66N/09343.01W
+radius       35.0
+start_angle  080
+end_angle    248
+degrees_on   360
+degrees_off  0

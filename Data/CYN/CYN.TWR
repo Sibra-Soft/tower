@@ -1,0 +1,187 @@
+Tower Controller Airport Layout File Version 3.80
+
+[Tower]
+Name           Canyon
+Location       51d15m00.00sN/096d00m00.00sW
+Altitude       500
+LocationBAO    0  0
+CabHeightBAO   13558
+LatLonUnits    OFF
+
+[Points]
+P1    RwyEnd         -804      443 9
+P2    RwyEnd         1847      439 27
+P3    Taxiway         274      440
+P4    RwyEnd         -493     1335 14
+P5    RwyEnd          847     -233 32
+P6    RwyInt           74      441 S2
+P7    RwyInt         -354      440 S2
+P8    Taxiway        -425      362
+P9    Taxiway        -422      307
+P10   Taxiway        -791      307
+P11   Taxiway        -811      347
+P12   Taxiway         196      306
+P13   Taxiway         508      -65
+P14   RwyInt          633       20 S1
+P15   RwyInt          389      306 S1
+P16   Taxiway         853      308
+P17   Taxiway         819      374
+P18   RwyInt          785      440 S2
+P19   RwyInt         1303      440 S2
+P20   Taxiway        1300      307
+P21   Taxiway        1842      307
+P22   Taxiway        1526      303
+P23   Taxiway        -434     1047
+P24   Taxiway        -556      935
+P25   Taxiway        -159      714
+P26   RwyInt          -46      815 S1
+P27   RwyInt         -330     1146 S85
+P28   Taxiway         126      307
+P29   Taxiway         245      248
+P30   AlleyLink       174      225
+P31   Taxiway        -152      306
+P32   Taxiway        1693      221
+P33   Taxiway        1655      221
+P34   Taxiway        1655      131
+P35   Taxiway        1693      131
+P38   Taxiway         -81       65
+P39   Taxiway         159       62
+P40   Taxiway         -81       92
+P41   Taxiway         159       92
+P51   Taxiway         -21       92
+P53   Taxiway          39       92
+P55   Taxiway          99       92
+P58   Taxiway         -21       65
+P60   Taxiway          39       62
+P62   Taxiway          99       62
+P155  Holdshort      -810      377   S3    9
+P156  Holdshort      1857      362   S13   27
+P157  Holdshort       558      -33   S26   32
+P158  Holdshort      -394     1087   S20   14
+P159  Taxiway         159      165
+P160  Taxiway         104      165
+P161  Taxiway          44      165
+P162  Taxiway         -24      165
+P163  Taxiway         -94      272
+P164  Taxiway         -81      237
+P165  Taxiway         -36      275
+P166  Taxiway         -21      240
+P167  Taxiway          24      275
+P168  Taxiway          39      242
+P169  Taxiway          81      272
+P170  Taxiway          99      240
+P171  Taxiway        -151      207
+P172  Taxiway        -512      902
+P173  Taxiway        -551      827
+P174  AlleyLink      -116      167
+P175  Taxiway         184      167
+P176  Taxiway        -591      961
+P177  Taxiway        -622      949
+P180  Taxiway        -592      844
+P181  Taxiway        -653      938
+P182  Taxiway        -475     1011
+P200  Taxiway        1655      247
+P201  Taxiway        1301      373
+P202  Taxiway        1526      247
+P203  Taxiway        -113      754
+P204  Taxiway         -42      577
+P205  Taxiway         667      307
+
+[Segments]
+S1    Runway     P4    P5    100 100
+S2    Runway     P1    P2    100 100
+S3    Taxiway    P1    P11    50  50
+S4    Taxiway    P11   P10    50  50
+S5    Taxiway    P10   P9     50  50
+S6    Taxiway    P9    P31    50  50
+S7    Taxiway    P31   P28    50  50
+S8    Taxiway    P28   P12    50  50
+S9    Taxiway    P12   P15    50  50
+S10   Taxiway    P15   P205   50  50
+S11   Taxiway    P16   P20    50  50
+S12   Taxiway    P20   P22    50  50
+S13   Taxiway    P21   P2     50  50
+S14   Taxiway    P22   P21    50  50
+S15   Taxiway    P16   P17    50  50
+S16   Taxiway    P17   P18    50  50
+S17   Taxiway    P201  P19    50  50
+S18   Taxiway    P9    P8     50  50
+S19   Taxiway    P8    P7     50  50
+S20   Taxiway    P23   P27    50  50
+S21   Taxiway    P23   P25    50  50
+S22   Taxiway    P25   P204   50  50
+S23   Taxiway    P6    P12    50  50
+S24   Taxiway    P12   P29    50  50
+S25   Taxiway    P29   P13    50  50
+S26   Taxiway    P13   P14    50  50
+S27   Taxiway    P25   p203   50  50
+S28   Taxiway    P23   P182   50  50
+S29   FreeRange  P29   P30    50  50
+S30   Taxiway    P20   P201   50  50
+S31   Taxiway    P203  p26    50  50
+S34   FreeRange  P200  P32    50  50
+S35   Taxiway    P202  p200   50  50
+S37   Taxiway    P22   p202   50  50
+S38   Taxiway    P205  P16    50  50
+S39   Taxiway    P182  P24    50  50
+E1    Ramp       P32   P35    50  50   G   F  
+S36   FreeRange  P32   P33    50  50
+E2    Ramp       P33   P34    50  50   G   F  
+G1    Ramp       P40   P38    50  50   CC  OP
+G9    Ramp       P41   P39    50  50   CC  OP
+G3    Ramp       P51   P58    50  50   CC  OP
+G5    Ramp       P53   P60    50  50   CC  OP
+G7    Ramp       P55   P62    50  50   CC  OP
+S67   FreeRange  P31   P171   50  50
+S70   FreeRange  P162  P161   50  50
+S71   FreeRange  P161  P160   50  50
+S72   FreeRange  P160  P159   50  50
+S73   FreeRange  P159  P30    50  50
+S74   FreeRange  P164  P162   50  50
+S75   FreeRange  P166  P161   50  50
+S76   FreeRange  P168  P160   50  50
+S77   FreeRange  P170  P159   50  50
+G2    Ramp       P163  P164   50  50   CC  OP
+G4    Ramp       P165  P166   50  50   CC  OP
+G6    Ramp       P167  P168   50  50   CC  OP
+G8    Ramp       P169  P170   50  50   CC  OP
+N1    Ramp       P173  P180   50  50   G   F  
+S80   FreeRange  P24   P172   50  50
+s83   FreeRange  P172  P173   50  50
+S84   Taxiway    P14   P5     50  50
+S85   Taxiway    P27   P4     50  50
+S86   FreeRange  P40   P162   50  50
+S87   FreeRange  P51   P161   50  50
+S88   FreeRange  P53   P160   50  50
+S89   FreeRange  P55   P159   50  50
+ALLEY1  Alley      P174  P175   50  50
+S90   FreeRange  P174  P171   50  50
+S91   FreeRange  P41   P159   50  50
+S92   FreeRange  P24   P176   50  50
+S93   FreeRange  P176  P177   50  50
+N2    Ramp       P177  P181   50  50   G   F 
+S94   Taxiway    P204   P6    50  50
+
+[Routes]
+A     P10     P9      P31     P28     P12     P205    P16     P20     P22     P21     end
+B     P23     P25     P204    P6      P12     P29     P13     end
+C     P25     P203    P26     end
+D     P9      P8      P7      end
+E     P16     P17     P18     end
+F     P20     P201    P19     end
+
+[VehicleRoutes]
+
+[PreferredRoutes]
+
+
+[Gates]
+G1         Left        325   90   60 G1        ALLEY1
+G2         Right       325   60   60 G2        ALLEY1
+G3         Left        325   90   60 G3        ALLEY1
+G4         Right       325   60   60 G4        ALLEY1
+G5         Left        325   90   60 G5        ALLEY1
+G6         Right       325   60   60 G6        ALLEY1
+G7         Left        325   90   60 G7        ALLEY1
+G8         Right       325   60   60 G8        ALLEY1
+G9         Center      300    0   60 G9        ALLEY1

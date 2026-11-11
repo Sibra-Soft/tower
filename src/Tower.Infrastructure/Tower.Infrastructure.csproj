@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup><ProjectReference Include="../Tower.Core/Tower.Core.csproj" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../Tower.Speech/Tower.Speech.csproj" /></ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+TOWER Simulation File Version 3.8
+
+!!! THIS FILE IS NOT INTENDED FOR USER MODIFICATION !!!
+!!! USER MODIFICATION CAN CAUSE UNPREDICABLE BEHAVIOR !!!
+
+[SimInfo]
+Sector   CYN.SEC
+Aircraft 5
+Vehicles 0
+Minutes  15
+Seed     803914858
+SimType  NORMAL
+
+[Description]
+This scenario contains five arriving aircraft.  Its intended use is to 
+familiarize the new user with how to handle only arriving aircraft.
+At lease one aircraft will arrive at each of the four runways.
+
+
+[Environment]
+
+[WindLevels]
+
+[Waypoints]
+
+[Aircraft]
+AAL378 MD8 VFR -1 a 00:01 250 6900 2000 1200 9
+ VAN CYN Twr @FS
+N4671A BE90 VFR -1 a 01:28 240 5800 1500 1200 14
+ VAN CYN Twr @FS
+UAL81 B727 VFR -1 a 03:00 250 7000 2000 1200 14
+ VAN CYN Twr @FS
+VOTER24 C130 VFR -1 a 03:57 250 6400 2000 1200 27
+ YLK CYN Twr @FS
+COA712 B737 VFR -1 a 05:00 250 6500 2000 1200 32
+ CLAWS CYN Twr @FS
+
+
+

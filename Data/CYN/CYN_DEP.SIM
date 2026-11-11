@@ -1,0 +1,36 @@
+TOWER Simulation File Version 3.8
+
+!!! THIS FILE IS NOT INTENDED FOR USER MODIFICATION !!!
+!!! USER MODIFICATION CAN CAUSE UNPREDICABLE BEHAVIOR !!!
+
+[SimInfo]
+Sector   CYN.SEC
+Aircraft 5
+Vehicles 0
+Minutes  20
+Seed     808400694
+SimType  NORMAL
+
+[Description]
+This practice scenario contains five departing aircraft designed to give
+the user experience in handling departures only.
+
+[Environment]
+
+[WindLevels]
+
+[Waypoints]
+
+[Aircraft]
+TOPGN71 F18 VFR -1 d 00:00 470 3499 7999 1200 14
+ CYN VAN Ctr @TO @LP
+UAL617 B727 VFR -1 d 00:45 250 3499 8499 1200 14
+ CYN VAN Ctr @TO @LP
+N21731 C208 VFR -1 d 01:45 210 3998 8498 1200 14
+ CYN CLAWS Ctr @TO @LP
+VOTER23 C130 VFR -1 d 02:40 250 3998 8498 1200 14
+ CYN CLAWS Ctr @TO @LP
+N4154B MU2 VFR -1 d 03:45 210 3499 7499 1200 14
+ CYN VAN Ctr @TO @LP
+
+

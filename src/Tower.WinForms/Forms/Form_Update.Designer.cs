@@ -1,0 +1,94 @@
+namespace Tower.WinForms.Forms;
+
+public partial class Form_Update
+{
+    private Label Label_Installed = null!;
+    private Label Label_Status = null!;
+    private Label Label_Notes = null!;
+    private TextBox TextBox_Notes = null!;
+    private ProgressBar Progress_Download = null!;
+    private Button Button_Check = null!;
+    private Button Button_Install = null!;
+    private Button Button_Close = null!;
+
+    private void InitializeComponent()
+    {
+        Label_Installed = new Label();
+        Label_Status = new Label();
+        Label_Notes = new Label();
+        TextBox_Notes = new TextBox();
+        Progress_Download = new ProgressBar();
+        Button_Check = new Button();
+        Button_Install = new Button();
+        Button_Close = new Button();
+        SuspendLayout();
+        Label_Installed.Location = new Point(16, 16);
+        Label_Installed.Name = "Label_Installed";
+        Label_Installed.Size = new Size(620, 24);
+        Label_Installed.Text = "Installed version";
+        Label_Status.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        Label_Status.Location = new Point(16, 44);
+        Label_Status.Name = "Label_Status";
+        Label_Status.Size = new Size(620, 52);
+        Label_Status.Text = "Choose Check Again to check for updates.";
+        Label_Notes.Location = new Point(16, 100);
+        Label_Notes.Name = "Label_Notes";
+        Label_Notes.Size = new Size(160, 22);
+        Label_Notes.Text = "Release notes";
+        TextBox_Notes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        TextBox_Notes.Location = new Point(16, 126);
+        TextBox_Notes.Multiline = true;
+        TextBox_Notes.Name = "TextBox_Notes";
+        TextBox_Notes.ReadOnly = true;
+        TextBox_Notes.ScrollBars = ScrollBars.Vertical;
+        TextBox_Notes.Size = new Size(620, 254);
+        TextBox_Notes.TabIndex = 0;
+        Progress_Download.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        Progress_Download.Location = new Point(16, 392);
+        Progress_Download.Name = "Progress_Download";
+        Progress_Download.Size = new Size(620, 18);
+        Button_Check.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        Button_Check.Location = new Point(16, 426);
+        Button_Check.Name = "Button_Check";
+        Button_Check.Size = new Size(116, 30);
+        Button_Check.TabIndex = 1;
+        Button_Check.Text = "Check Again";
+        Button_Check.Click += Button_Check_Click;
+        Button_Install.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        Button_Install.Enabled = false;
+        Button_Install.Location = new Point(330, 426);
+        Button_Install.Name = "Button_Install";
+        Button_Install.Size = new Size(184, 30);
+        Button_Install.TabIndex = 2;
+        Button_Install.Text = "Download and Install";
+        Button_Install.Click += Button_Install_Click;
+        Button_Close.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        Button_Close.Location = new Point(526, 426);
+        Button_Close.Name = "Button_Close";
+        Button_Close.Size = new Size(110, 30);
+        Button_Close.TabIndex = 3;
+        Button_Close.Text = "Close";
+        Button_Close.Click += Button_Close_Click;
+        AutoScaleDimensions = new SizeF(96F, 96F);
+        AutoScaleMode = AutoScaleMode.Dpi;
+        ClientSize = new Size(652, 472);
+        MinimumSize = new Size(668, 511);
+        Controls.Add(Label_Installed);
+        Controls.Add(Label_Status);
+        Controls.Add(Label_Notes);
+        Controls.Add(TextBox_Notes);
+        Controls.Add(Progress_Download);
+        Controls.Add(Button_Check);
+        Controls.Add(Button_Install);
+        Controls.Add(Button_Close);
+        Name = "Form_Update";
+        ShowInTaskbar = false;
+        StartPosition = FormStartPosition.CenterParent;
+        Text = "Tower Updates";
+        Load += Form_Update_Load;
+        FormClosing += Form_Update_FormClosing;
+        FormClosed += Form_Update_FormClosed;
+        ResumeLayout(false);
+        PerformLayout();
+    }
+}

@@ -1,0 +1,234 @@
+Tower V1.0 Sector File Version 3.8
+;
+RadarSite    5115.27N/09559.64W
+AirportSite  5114.77N/09600.31W
+DFSite       5114.77N/09600.31W
+MagneticVar  -5
+MaxAltitude  23000
+CtrAltitude  31000
+MaxAirspaceLength  10000
+MaxAirspaceWidth   10000
+
+[SpecialLines]
+RwyCtrLen           10
+RwyCtrLineStyle     dash 0.50 0.50
+FACourseLen         10
+FACourseLineStyle   dash 1.00 0.50
+
+[MSA]
+2500  270 089
+2200  090 269
+
+[NetworkPositions]
+CYN_ALL NE
+A
+5115.00N/09600.00W
+110
+
+
+[Fixes]
+FILMO       i   1  5112.38N/09520.49W  N   000 A        01     NONE    No 
+GUMBY       i   2  5058.94N/09529.56W  N   000 A        01     NONE    No 
+CLAWS       i   3  5030.01N/09434.79W  S   000 A        01     CLAWS   No 
+HOVER       i   4  5055.70N/09636.50W  SW  000 A        01     NONE    Yes
+IBSEN       i   5  5017.10N/09747.20W  S   000 A        01     LOGAN/IBSEN No 
+ENCOR       i   6  5116.73N/09631.67W  N   000 A        01     NONE    Yes
+DUNKY       i   7  5120.21N/09734.98W  N   000 A        01     NONE    No 
+CANDL       i   8  5123.65N/09838.31W  S   000 A        01     NONE    No 
+ANSON       i   9  5139.45N/09850.14W  E   000 A        01     NONE    Yes
+BOSCO       i  10  5301.37N/09636.74W  N   000 A        01     BOSCO   No 
+JENNY       i  11  5302.66N/09234.46W  N   000 A        0123   SANDI   No 
+LOGAN       i  12  5031.24N/09911.14W  N   000 A        0123   LOGAN/IBSEN No 
+V205&BRDR   i   0  4907.23N/09147.09W  N   000 G        01     NONE    No 
+J405&BRDR   i   0  4901.47N/09133.36W  S   000 G        23     NONE    No 
+V210&BRDR   i   0  4908.65N/09627.99W  N   000 G        01     NONE    No 
+B09         i   0  5224.29N/09519.14W  N   000 A        1      NONE    No 
+B27         i   0  5224.22N/09517.90W  N   000 A        1      NONE    No 
+C09         i   0  5135.42N/09732.76W  N   000 A        1      NONE    No 
+C27         i   0  5135.39N/09731.47W  N   000 A        1      NONE    No 
+SANDI       i  13  5201.85N/09432.56W  N   000 A        0123   SANDI   No 
+
+CYN         +  14  5114.92N/09600.14W  S   000 A        0123   YMR     No 
+DL2         -  15  5044.68N/09859.57W  E   000 A        0123   LOGAN/IBSEN No 
+WN2         -  16  5145.07N/09352.61W  N   000 A        0123   SANDI   No 
+CD9         -  17  5135.42N/09732.08W  N   000 A        0123   VAN/AN  No 
+CYDU        -  18  5224.26N/09518.52W  N   000 A        1      NONE    No 
+CYHW        -  19  4949.94N/09336.46W  N   000 A        1      NONE    No 
+CYFG        -  20  4956.80N/09111.40W  N   000 A        1      NONE    No 
+CYLK        -  21  5059.35N/09240.19W  N   000 A        1      NONE    No 
+CY4U        -  22  5400.81N/09207.69W  N   000 A        1      NONE    No 
+CYCK        -  23  5350.25N/09515.24W  N   000 A        1      NONE    No 
+CYMC        -  24  4945.91N/09620.09W  N   000 A        1      NONE    No 
+CYJU        -  25  4925.14N/09928.27W  N   000 A        1      NONE    No 
+CYBY        -  26  5221.29N/09951.82W  N   000 A        1      NONE    No 
+
+R           p   0  5111.24N/09556.05W  E   000 A        01     NONE    No 
+FAF32       p   0  5118.73N/09604.38W  W   000 A        01     NONE    No 
+
+YMR         v  27  5115.00N/09600.00W  NW  000 A        0123   YMR     Yes
+YDU         v  28  5224.53N/09518.86W  N   000 A        0123   YDU     No 
+YLK         v  29  5101.24N/09233.51W  N   000 A        0123   YLK     No 
+VGI         v  30  5001.66N/09343.01W  S   000 H        0123   NONE    No 
+YMC         v  31  4944.39N/09613.68W  SE  000 G        0123   NONE    No 
+YJU         v  32  4922.30N/09923.18W  N   000 D        0123   NONE    No 
+VAN         v  33  5125.30N/09908.90W  N   000 A        0123   VAN/AN  No 
+YCK         v  34  5349.41N/09515.76W  N   000 C        0123   NONE    No 
+YBY         v  35  5219.77N/09945.15W  N   000 B        0123   NONE    No 
+VLA         v  36  5345.80N/09104.58W  N   000 C        0123   NONE    No 
+YDR         v  37  4938.06N/10246.57W  N   000 D        0123   NONE    No 
+YQV         v  38  5134.09N/10154.90W  N   000 D        0123   NONE    No 
+YQD         v  39  5516.40N/09844.80W  N   000 C        0123   NONE    No 
+YGX         v  40  5440.34N/09324.12W  N   000 C        0123   NONE    No 
+YQT         v  41  5050.84N/08923.55W  N   000 E        0123   NONE    No 
+YFG         v  42  4952.98N/09108.03W  N   000 E        0123   NONE    No 
+AN          n  43  5140.77N/09912.39W  N   000 A        01     VAN/AN  No 
+CD          n  44  5135.77N/09738.53W  N   000 A        01     NONE    No 
+4U          n  45  5400.78N/09200.25W  N   000 C        0123   NONE    No 
+M           n  46  5114.50N/09552.46W  NE  000 A        01     NONE    No 
+MR          n  47  5115.28N/09606.78W  W   000 A        01     NONE    No 
+QV          n  48  5137.32N/10156.35W  N   000 D        1      NONE    No 
+DU          n  49  5224.60N/09524.97W  N   000 A        1      NONE    No 
+LK          n  50  5102.15N/09234.82W  N   000 A        1      NONE    No 
+CK          n  51  5350.28N/09524.38W  N   000 C        1      NONE    No 
+HW          n  52  4951.88N/09330.37W  N   000 H        1      NONE    No 
+
+
+[Airways]
+GR8       1222.79N/74614.65W  1222.79N/74614.65W  NONE
+  YDU 4U 0
+V1        1222.79N/74614.65W  1222.79N/74614.65W  1
+  VAN ANSON BOSCO YCK 0
+V200      1222.79N/74614.65W  1222.79N/74614.65W  1
+  YFG VGI YMC YJU YDR 0
+V205      1222.79N/74614.65W  1222.79N/74614.65W  1
+  V205&BRDR VGI CLAWS GUMBY YMR HOVER IBSEN YJU 0
+V210      1222.79N/74614.65W  1222.79N/74614.65W  1
+  V210&BRDR YMC YMR YDU YCK YGX 0
+V215      1222.79N/74614.65W  1222.79N/74614.65W  1
+  YQV VAN CANDL DUNKY ENCOR YMR FILMO YLK YQT 0
+V220      1222.79N/74614.65W  1222.79N/74614.65W  NONE
+  YDU YLK 0
+J400      1222.79N/74614.65W  1222.79N/74614.65W  23
+  YFG VGI YJU YDR 0
+J405      1222.79N/74614.65W  1222.79N/74614.65W  23
+  J405&BRDR VGI YMR 0
+J410      1222.79N/74614.65W  1222.79N/74614.65W  123
+  YGX YDU YMR 0
+J412      1222.79N/74614.65W  1222.79N/74614.65W  123
+  VLA JENNY SANDI YMR LOGAN YDR 0
+J415      1222.79N/74614.65W  1222.79N/74614.65W  23
+  YQT YLK YMR VAN YQV 0
+J420      1222.79N/74614.65W  1222.79N/74614.65W  123
+  YLK SANDI YDU YQD 0
+R40       5137.32N/10156.35W  5115.28N/09606.78W  1
+  QV AN ANSON CD MR 0
+
+[Airports]
+CYN  Canyon             750  1  40   5 10 40  5 30  5  0  0  0  0  0  0  5
+4  27    5114.85N/09558.79W  5114.97N/09601.07W   8800  270  0 1 2
+      LOCBC27 M       2000  270   4.0  1 1 2  ILS
+         M         3  /H090/D5/A21 /H134/D4 /H315
+         MAPPR     2  /A20 MR
+      NDBRWY27 M       2000  270   4.0  1 1 2  NDB
+         M         3  /H090/D5/A21 /H134/D4 /H315
+         MAPPR     2  /A20 MR
+   09    5114.97N/09601.07W  5114.85N/09558.79W   8800   90  0 1 2
+      ILSRWY09 MR      2000  090   3.6  1 1 3  ILS
+         HOVER     2  /CYN/D12/R270/A25 /H045
+         MR        3  /H270/D5/A21 /H226/D4 /H045
+         MAPPR     2  /A25 M
+      NDBRWY09 MR      2000  090   3.6  1 1 2  ILS
+         MR        3  /H270/D5/A21 /H226/D4 /H045
+         MAPPR     2  /A25 M
+   14    5115.44N/09600.73W  5114.53N/09559.70W   6900  140  0 1 1
+      NDB14   R       2000  140   4.0  0 0 1  NDB
+         R         3  /H318/D5/A22 /H274/D4 /H093
+   32    5114.53N/09559.70W  5115.44N/09600.73W   6900  320  0 1 1
+      VORDME32 FAF32   2000  320   4.0  0 0 1  VOR/DME
+         FAF32     3  /H148/D5/A22 /H102/D4 /H283
+DL2  DOUGLAS           800  0   5  30 30 30 10  0  0  0  0  0  0  0  0  0
+2  29    5044.58N/09859.13W  5044.78N/09900.01W   3500  290  0 1 0
+   11    5044.78N/09900.01W  5044.58N/09859.13W   3500  110  0 0 0
+WN2  Witt's_End        800  0   0  10 40 40 10  0  0  0  0  0  0  0  0  0
+2  28    5144.01N/09352.21W  5144.10N/09353.01W   3000  280  0 1 0
+   10    5144.10N/09353.01W  5144.01N/09352.21W   3000  100  0 0 0
+CD9  Cardinal          750  0   0  20 20 50 10  0  0  0  0  0  0  0  0  0
+2  09    5135.42N/09732.60W  5135.42N/09731.57W   3800   90  0 1 1
+      NDBA09  CD      2100  090   3.6  0 0 1  NDB/A
+         CD        3  /H270/D5/A24 /H316/D4 /H135
+   27    5135.42N/09731.57W  5135.42N/09732.60W   3800  270  0 0 0
+CYDU Duval            1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  09    5224.26N/09519.20W  5224.26N/09517.85W   5000   90  0 1 1
+      NDB09   DU      1500  090   3.6  0 0 1  NDB
+         DU        3  /H270/D5/A21 /H316/D4 /H135
+   27    5224.26N/09517.85W  5224.26N/09519.20W   5000  270  0 1 0
+CYHW harwood          1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  45    4949.65N/09336.92W  4950.24N/09336.00W   5000   45  0 1 0
+   225   4950.23N/09336.00W  4949.65N/09336.92W   5000  225  0 0 0
+CYFG laforge          1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  330   4956.44N/09111.07W  4957.16N/09111.72W   5000  330  0 1 0
+   150   4957.16N/09111.72W  4956.44N/09111.08W   5000  150  0 0 0
+CYLK eastlake         1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  230   5059.62N/09239.68W  5059.09N/09240.69W   5000  230  0 1 0
+   50    5059.08N/09240.70W  5059.62N/09239.68W   5000   50  0 0 0
+CY4U thefringe        1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  270   5400.81N/09206.99W  5400.81N/09208.41W   5000  270  0 1 0
+   90    5400.81N/09208.40W  5400.81N/09206.98W   5000   90  0 0 0
+CYCK clearlake        1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  270   5350.25N/09514.53W  5350.25N/09515.95W   5000  270  0 1 0
+   090   5350.25N/09515.95W  5350.25N/09514.53W   5000   90  0 0 0
+CYMC mcconnell        1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  290   4945.77N/09619.48W  4946.06N/09620.70W   5000  290  0 1 0
+   110   4946.05N/09620.70W  4945.77N/09619.48W   5000  110  0 0 0
+CYJU jupiter          1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  310   4924.88N/09927.79W  4925.42N/09928.76W   5000  310  0 1 0
+   130   4925.41N/09928.76W  4924.87N/09927.78W   5000  130  0 0 0
+CYBY bentley          1000  0   0   0  0  0  0  0  0  0  0  0  0  0  0  0
+2  290   5221.15N/09951.19W  5221.43N/09952.46W   5000  290  0 1 0
+   110   5221.43N/09952.46W  5221.15N/09951.18W   5000  110  0 0 0
+Ctr  Enroute          1000  0  55  15 10  5 10 35 25  0  0  0  0  0  0  0
+0  
+
+[ArrivalFlow]
+CLAWS     10
+IBSEN     20
+VAN       25
+YLK       25
+YDU       10
+YMC       10
+
+[DepartureFlow]
+CLAWS     10
+IBSEN     10
+VAN       25
+YDU       10
+YLK       25
+YMC       20
+
+[Maps/Range]
+1         90
+2         90
+3         90
+0   Brite 10    CYN
+4         0
+5         0
+6         0
+7         0
+8         0
+9         0
+
+[Procedures]
+
+[HeaderStrips]
+LOGAN/IBSEN      1
+VAN/AN           1
+BOSCO            1
+YMR              2
+YDU              2
+CLAWS            3
+YLK              3
+SANDI            3
+
+[HoldingPatterns]
+MR E 090 2 MINUTES L
+M W 270 2 MINUTES L
